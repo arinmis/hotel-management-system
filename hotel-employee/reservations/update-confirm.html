@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <!-- Required meta tags -->
@@ -7,29 +7,47 @@
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	  <link href="index.css" rel="stylesheet">
-      <title>Home page</title>
+      <title>Confirm Reservaion Update</title>
    </head>
    <body class="bg-body">
+	    <!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h3 class="modal-title" id="exampleModalLabel">Reservation Update </h3>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				  Do you confirm reservation update?
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+				<button type="button" class="btn btn-primary" onclick="location.replace('reservations.html')">Yes</button>
+			  </div>
+			</div>
+		  </div>
+		</div>	
 	   <!-- Navbar -->
       <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark text-white">
          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../rooms/rooms.html">
             <img src="../../imgs/logo.svg" alt="logo" width="50px" height="50px"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav ">
                   <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="../about-hotel/about-hotel.html">About Hotel</a>
+                     <a class="nav-link active" href="../rooms/rooms.html">Rooms</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="../rooms/rooms.html">Rooms</a>
+                     <a class="nav-link" href="../reservations/reservations.html">Reservations</a>
                   </li>
                   <!-- when customer login -->
                   <li class="nav-item">
-                     <a class="nav-link" href="../my-reservations/my-reservations.html">My Reservations</a>
+                     <a class="nav-link" href="../hotel-report/hotel-report.html">Hotel Report</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="../../login/login.html">Login/Logout</a>
@@ -39,32 +57,53 @@
          </div>
       </nav>
 	  <!-- Main content -->
-		<div id="hotel-imgs" class="carousel slide" data-bs-ride="carousel">
-		  <div class="carousel-indicators">
-			<button type="button" data-bs-target="#hotel-imgs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#hotel-imgs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#hotel-imgs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  <div class="container">
+	  <div class="row justify-content-center align-items-center mt-5 p-5">
+		  <div class="col-4">
+		     <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                     <div class="card-header text-center">Room 2</div>
+                     <div class="card-body">
+                        <p class="card-text">
+                        	</p>
+                       		<section id="cost"><b>Check-in date:</b> 02/05/2021</section>
+                       		<section id="cost"><b>Check-out date:</b> 07/05/2021</section>
+							<section id="room-size"><b>Room Size:</b> 1</section>
+                       		<section id="cost"><b>Cost per night:</b> 100$</section>
+                       		<section id="cost"><b>Total Cost:</b> 500$</section>
+						<p></p>
+                     </div>
+                </div>	
 		  </div>
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <img src="../../imgs/carousel-1.jpg" class="d-block w-100 hotel-imgs" alt="...">
-			</div>
-			<div class="carousel-item">
-			  <img src="../../imgs/carousel-2.jpg" class="d-block w-100 hotel-imgs" alt="...">
-			</div>
-			<div class="carousel-item">
-			  <img src="../../imgs/carousel-3.jpg" class="d-block w-100 hotel-imgs" alt="...">
-			</div>
+		     <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                     <div class="card-header text-center">Customer</div>
+                     <div class="card-body">
+				<div class="mb-3">
+					<p><b>First Name:</b> Mustafa</p>
+				</div>
+				<div class="mb-3">
+					<p><b>Last Name:</b> Arinmis</p>
+				</div>
+				<div class="mb-3">
+					<p><b>Email Address:</b> mustafa_arinmis@outlook.com</p>
+				</div>
+				<div class="mb-3">
+					<p><b>Phone Number:</b> +90 543 549 99 53</p>
+				</div>
+                     </div>
+                </div>	
 		  </div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#hotel-imgs" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#hotel-imgs" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		  </button>
-		</div>
+		  <div class="row">
+			  <div class="col"></div>
+			  <div class="col">
+				  <hr>
+			  	  <div class="container text-center">
+					<button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Confirm</button>
+					<button type="button" class="btn btn-secondary m-2" onclick="location.replace('rooms-update.html')">Cancel</button>
+			  	 </div>
+			  </div>
+			  <div class="col"></div>
+		  </div>
+	  </div>
 		<!-- Footer -->
 		  <footer class="fixed-bottom navbar-dark bg-dark text-white">
 			 <div class="container-fluid text-center">
@@ -99,11 +138,14 @@
 				   </div>
 				</div>
 			 </div>
+	  </div>
 		  </footer>
       <!-- Bootstrap JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
    </body>
 </html>
+
+
 
 
 

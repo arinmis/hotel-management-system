@@ -41,37 +41,49 @@
 	  <!-- Main content -->
 	  <div class="container-fluid">
 	  	  <!-- Searching --> 
-		  <div class="row bg-secondary m-5 p-3">
-			  <div class="col-5">
-						<div class="input-group">
-						  <span class="input-group-text">Check-in date:</span>
-						  <input type="date" class="form-control">
-						</div>
-			  </div>
-			  <div class="col-5">
-						<div class="input-group block">
-						  <span class="input-group-text">Check-out date:</span>
-						  <input type="date" class="form-control">
-						</div>
-			  </div>
-			  <div class="col-2 d-flex justify-content-center block">
-					 <button type="button" class="btn btn-info">Search</button>
-			  </div>
-		  </div>
+	       <div class="row m-5 p-2 bg-light shadow-lg rounded d-flex align-items-center">
+			 <div class="col my-2">
+				<div class="input-group">
+				   <span class="input-group-text">Start date:</span>
+				   <input type="date" class="form-control">
+				</div>
+			 </div>
+			 <div class="col my-2">
+				<div class="input-group">
+				   <span class="input-group-text">End date:</span>
+				   <input type="date" class="form-control">
+				</div>
+			 </div>
+			 <div class="col my-2 d-flex justify-content-center">
+				<button type="button" class="btn btn-info">Search</button>
+			 </div>
+		  </div>		
 		  <div class="row bg-light m-5">
 		 <div class="row m-4">
-			 <div class="row d-flex">
-			 <div class="col text-center">
-				 <b>Income:</b> 
-				 <span>123</span>$
+			 <div class="text-center row d-flex">
+			 <div class="col d-flex align-items-center justify-content-center">
+			      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+					  <div class="card-header">Total Income</div>
+					  <div class="card-body">
+						<p class="card-text">
+						 123$
+						</p>
+					  </div>
+				</div> 		
 			 </div>
-			 <div class="col text-center">
-				<figure>
-					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
-  <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
-	</svg>
-					<figcaption >Occupancy rate</figcaption>
-				</figure>
+			 <div class="col d-flex align-items-center justify-content-center">
+			      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+					  <div class="card-header">Occupancy Rate</div>
+					  <div class="card-body">
+						<p class="card-text">
+						<figure >
+							<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+		  <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+			</svg>
+						</figure>
+						</p>
+					  </div>
+				</div> 		
 			 </div>
 		 </div>
 			 </div>
