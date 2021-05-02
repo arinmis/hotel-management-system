@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
                <ul class="navbar-nav ">
                   <li class="nav-item">
-                     <a class="nav-link" href="../rooms/rooms.html">Rooms</a>
+                     <a class="nav-link active" href="../rooms/rooms.html">Rooms</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="../reservations/reservations.html">Reservations</a>
@@ -39,15 +39,23 @@
          </div>
       </nav>
 	  <!-- Main content -->
+	  <div class="container">
 	  <div class="row justify-content-center align-items-center mt-5 p-5">
 		  <div class="col-4">
-			<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-			  <div class="card-header">Room 2</div>
-			  <div class="card-body">
-				<h5 class="card-title">Success card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
-			</div>
+		     <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                     <div class="card-header text-center">Room 2</div>
+                     <div class="card-body">
+                        <p class="card-text">
+                        	</p>
+                       		<section id="cost"><b>Check-in date:</b> 02/05/2021</section>
+                       		<section id="cost"><b>Check-out date:</b> 07/05/2021</section>
+							<section id="room-size"><b>Room Size:</b> 1</section>
+                       		<section id="cost"><b>Cost per night:</b> 100$</section>
+                       		<section id="cost"><b>Total Cost:</b> 500$</section>
+                       		<a href="../my-reservations/my-reservations.html" class="stretched-link"></a>
+						<p></p>
+                     </div>
+                </div>	
 		  </div>
 		  <div class="col-4">
 				<form>
@@ -68,11 +76,17 @@
 						<input type="text" class="form-control" id="phone-number">
 					</div>
 				</form>
-			    <h3>Total Cost: 1234$</h3>
-			  	  <div class="container">
+		  </div>
+		  <div class="row">
+			  <div class="col"></div>
+			  <div class="col">
+				  <hr>
+			  	  <div class="container text-center">
 					<button type="button" class="btn btn-primary">Confirm</button>
 					<button type="button" class="btn btn-secondary">Cancel</button>
 			  	 </div>
+			  </div>
+			  <div class="col"></div>
 		  </div>
 	  </div>
 		<!-- Footer -->
@@ -109,6 +123,7 @@
 				   </div>
 				</div>
 			 </div>
+	  </div>
 		  </footer>
       <!-- Bootstrap JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
