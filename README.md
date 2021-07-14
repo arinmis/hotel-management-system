@@ -1,3 +1,3 @@
 # hotel-management-system
-Hotel management web application
+Hotel management web project
 
